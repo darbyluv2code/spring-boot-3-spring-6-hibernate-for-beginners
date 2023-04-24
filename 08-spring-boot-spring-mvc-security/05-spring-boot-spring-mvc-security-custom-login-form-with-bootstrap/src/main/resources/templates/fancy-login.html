@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Login Page</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="loginbox" style="margin-top: 50px;" class="col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+                <div class="card border-info">
+                    <div class="card-header bg-info">
+                        Sign In
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-text">
+
+                            <!-- Login Form -->
+                            <form action="#" th:action="@{/authenticateTheUser}" method="POST" class="form-horizontal">
+
+                                <!-- Place for messages: error, alert etc ... -->
+                                <div class="form-group">
+                                    <div class="col-xs-15">
+                                        <div>
+                                            <!-- Check for login error -->
+                                            <div th:if="${param.error}">
+
+                                                <div class="alert alert-danger col-xs-offset-1 col-xs-10">
+                                                    Invalid username and password.
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- User name -->
+                                <div style="margin-bottom: 25px;" class="input-group">
+                                    <input type="text" name="username" placeholder="username" class="form-control" />
+                                </div>
+
+                                <!-- Password -->
+                                <div style="margin-bottom: 25px;" class="input-group">
+                                    <input type="password" name="password" placeholder="password" class="form-control" />
+                                </div>
+
+                                <!-- Login/Submit Button -->
+                                <div style="margin-top: 10px;" class="form-group">
+                                    <div class="col-sm-6 controls">
+                                        <button type="submit" class="btn btn-success">Login</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
