@@ -32,7 +32,7 @@ public class CruddemoApplication {
 
 	private void retrieveCourseAndReviews(AppDAO appDAO) {
 
-		// get the course
+		// get the course and reviews
 		int theId = 10;
 		Course tempCourse = appDAO.findCourseAndReviewsByCourseId(theId);
 
