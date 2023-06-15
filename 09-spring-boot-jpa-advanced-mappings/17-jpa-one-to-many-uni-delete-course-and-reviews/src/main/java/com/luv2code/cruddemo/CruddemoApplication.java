@@ -49,9 +49,6 @@ public class CruddemoApplication {
 		int theId = 10;
 		Course tempCourse = appDAO.findCourseAndReviewsByCourseId(theId);
 
-		// get the course reviews
-		List<Review> reviews = tempCourse.getReviews();
-
 		// print the course
 		System.out.println(tempCourse);
 
