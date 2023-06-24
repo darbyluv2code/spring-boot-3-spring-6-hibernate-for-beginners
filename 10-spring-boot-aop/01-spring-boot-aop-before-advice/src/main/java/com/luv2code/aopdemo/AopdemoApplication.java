@@ -5,7 +5,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @SpringBootApplication
 public class AopdemoApplication {
@@ -29,9 +28,18 @@ public class AopdemoApplication {
 		theAccountDAO.addAccount();
 
 		// do it again!
-		System.out.println("\nlet's call it again!\n");
+		System.out.println("\n let's call it again!\n");
 
 		// call the business method again
 		theAccountDAO.addAccount();
 	}
+
 }
+
+
+
+
+
+
+
+
