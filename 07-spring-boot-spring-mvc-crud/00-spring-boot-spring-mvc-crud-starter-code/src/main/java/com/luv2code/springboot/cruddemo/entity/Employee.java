@@ -1,4 +1,4 @@
-package com.luv2code.springboot.thymeleafdemo.entity;
+package com.luv2code.springboot.cruddemo.entity;
 
 import jakarta.persistence.*;
 
