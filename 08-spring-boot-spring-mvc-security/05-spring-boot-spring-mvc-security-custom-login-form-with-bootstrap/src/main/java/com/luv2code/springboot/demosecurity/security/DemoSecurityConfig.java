@@ -44,8 +44,11 @@ public class DemoSecurityConfig {
                 )
                 .formLogin(form ->
                         form
+                           //showMyLoginPage: we need a controller got this request mapping
                                 .loginPage("/showMyLoginPage")
-                                .loginProcessingUrl("/authenticateTheUser")
+                           //  no controller required for processing this 
+                           .loginProcessingUrl("/authenticateTheUser")
+                           //allow everyone to see the login page
                                 .permitAll()
                 );
 
