@@ -6,7 +6,7 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 1: Spring Boot 3 Quick Start
 
 | Name       | Web Link       |    
-| ------------- |:-------------:|
+|:------------- |:-------------|
 | IntelliJ      | https://www.jetbrains.com/idea/ |
 | Eclipse      | https://eclipseide.org/      |
 | VS Code | https://code.visualstudio.com/      | 
