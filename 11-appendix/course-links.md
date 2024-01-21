@@ -3,6 +3,13 @@
 
 Here is a list of links that I mentioned in the course. I also added extra links that you may find useful.
 
+### Download Source Code and PDFs
+
+* The source code is available here on GitHub: [spring-boot-3-spring-6-hibernate-for-beginners](https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners)
+
+* The PDFs are only available inside the course. PDFs are attached to [Lecture 3 in the course](https://www.udemy.com/course/spring-hibernate-tutorial/learn/lecture/5117038).
+
+
 ### Section 1: Spring Boot 3 Quick Start
 
 | Name       | Web Link       |    
