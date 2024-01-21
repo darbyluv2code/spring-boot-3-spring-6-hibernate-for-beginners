@@ -1,7 +1,7 @@
 # Spring Boot 3, Spring 6 and Hibernate for Beginners
 ## Course Links
 
-Here is a list of links that are mentioned in the course. I also added extra links that you may find useful.
+Here is a list of links that I mentioned in the course. I also added extra links that you may find useful.
 
 ### Section 1: Spring Boot 3 Quick Start
 
