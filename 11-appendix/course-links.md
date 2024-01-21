@@ -25,7 +25,7 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 2: Spring Core
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Spring Framework Reference Manual      | https://docs.spring.io/spring-framework/reference/index.html |
 | Spring Boot Reference Manual      | https://docs.spring.io/spring-boot/docs/current/reference/html/index.html      |
 
@@ -33,7 +33,7 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 3: Hibernate/JPA CRUD
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Hibernate Object/Relational Mapping (ORM)      | https://hibernate.org/orm/ |
 | Jakarta Persistence API (JPA)      | https://jakarta.ee/specifications/persistence/  |
 | JDBC | https://docs.oracle.com/javase/tutorial/jdbc/overview/index.html |
@@ -44,7 +44,7 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 4: REST CRUD APIs
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Jackson JSON Databinding | https://github.com/FasterXML/jackson-databind |
 | Spring Data JPA Reference Manual | https://docs.spring.io/spring-data/jpa/reference/ |
 | Spring Data REST Reference Manual | https://docs.spring.io/spring-data/rest/reference/ |
@@ -53,7 +53,7 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 5: REST API Security
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Spring Security Reference Manual | https://docs.spring.io/spring-security/reference/index.html |
 | Why Use Bcrypt? | https://danboterhoven.medium.com/why-you-should-use-bcrypt-to-hash-passwords-af330100b861 |
 | Bcrypt Algorithm Analysis | https://en.wikipedia.org/wiki/Bcrypt |
@@ -64,7 +64,7 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 6: Spring MVC
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Spring MVC Reference Manual | https://docs.spring.io/spring-framework/reference/web/webmvc.html |
 | Thymeleaf | https://www.thymeleaf.org/ |
 | Cascading Style Sheets (CSS) | https://developer.mozilla.org/en-US/docs/Learn/CSS |
@@ -75,14 +75,14 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 7: Spring MVC CRUD
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Spring MVC Reference Manual | https://docs.spring.io/spring-framework/reference/web/webmvc.html |
 | Thymeleaf | https://www.thymeleaf.org/ |
 
 ### Section 8: Spring MVC Security
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Spring Security Reference Manual | https://docs.spring.io/spring-security/reference/index.html |
 
 
@@ -90,7 +90,7 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 9: JPA/Hibernate Advanced Mappings
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Hibernate Object/Relational Mapping (ORM)      | https://hibernate.org/orm/ |
 | Jakarta Persistence API (JPA)      | https://jakarta.ee/specifications/persistence/  |
 
@@ -98,6 +98,6 @@ Here is a list of links that I mentioned in the course. I also added extra links
 ### Section 10: AOP: Aspect-Oriented Programming
 
 | Name       | Web Link       |    
-| ------------- |-------------|
+|:------------- |:-------------|
 | Spring AOP Reference Manual | https://docs.spring.io/spring-framework/reference/core/aop.html |
 | AspectJ      | https://eclipse.dev/aspectj/  |
