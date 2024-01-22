@@ -21,6 +21,8 @@ Here is a list of links that I mentioned in the course. I also added extra links
 | Maven | https://maven.apache.org/ |
 | Spring Boot Actuator Endpoints | https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator.endpoints |
 | Spring Boot Common Properties | https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties |
+| Install Java on MS Windows | https://www.luv2code.com/install-java-on-ms-windows |
+
 
 ### Section 2: Spring Core
 
