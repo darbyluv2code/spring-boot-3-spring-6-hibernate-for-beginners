@@ -73,7 +73,6 @@ Here is a list of links that I mentioned in the course. I also added extra links
 | Thymeleaf | https://www.thymeleaf.org/ |
 | Thymeleaf - Creating a Form | https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#creating-a-form |
 | Cascading Style Sheets (CSS) | https://developer.mozilla.org/en-US/docs/Learn/CSS |
-
 | Bootstrap CSS | https://getbootstrap.com/ |
 | Bean Validator Specification | https://www.beanvalidation.org |
 | Hibernate Validator (Reference Implementation) | https://hibernate.org/validator/ |
