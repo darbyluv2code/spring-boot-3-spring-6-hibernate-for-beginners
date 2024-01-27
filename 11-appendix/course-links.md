@@ -19,7 +19,9 @@ Here is a list of links that I mentioned in the course. I also added extra links
 | Spring Initializr | https://start.spring.io/ |
 | Spring Boot Starters | https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using.build-systems.starters |
 | Maven | https://maven.apache.org/ |
+| Spring Boot Actuator Docs | https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator |
 | Spring Boot Actuator Endpoints | https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator.endpoints |
+| Spring Boot Logging | https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.logging |
 | Spring Boot Common Properties | https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties |
 | Install Java on MS Windows | https://www.luv2code.com/install-java-on-ms-windows |
 
@@ -69,7 +71,9 @@ Here is a list of links that I mentioned in the course. I also added extra links
 |:------------- |:-------------|
 | Spring MVC Reference Manual | https://docs.spring.io/spring-framework/reference/web/webmvc.html |
 | Thymeleaf | https://www.thymeleaf.org/ |
+| Thymeleaf - Creating a Form | https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#creating-a-form |
 | Cascading Style Sheets (CSS) | https://developer.mozilla.org/en-US/docs/Learn/CSS |
+
 | Bootstrap CSS | https://getbootstrap.com/ |
 | Bean Validator Specification | https://www.beanvalidation.org |
 | Hibernate Validator (Reference Implementation) | https://hibernate.org/validator/ |
@@ -80,6 +84,7 @@ Here is a list of links that I mentioned in the course. I also added extra links
 |:------------- |:-------------|
 | Spring MVC Reference Manual | https://docs.spring.io/spring-framework/reference/web/webmvc.html |
 | Thymeleaf | https://www.thymeleaf.org/ |
+| Spring Data JPA Query Methods | https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html |
 
 ### Section 8: Spring MVC Security
 
