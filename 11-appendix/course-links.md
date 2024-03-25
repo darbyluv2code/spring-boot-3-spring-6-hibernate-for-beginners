@@ -51,7 +51,8 @@ Here is a list of links that I mentioned in the course. I also added extra links
 |:------------- |:-------------|
 | Jackson JSON Databinding | https://github.com/FasterXML/jackson-databind |
 | Spring Data JPA Reference Manual | https://docs.spring.io/spring-data/jpa/reference/ |
-| Spring Data REST Reference Manual | https://docs.spring.io/spring-data/rest/reference/ |
+| HATEOAS | https://spring.io/projects/spring-hateoas |
+| Hypertext Application Language (HAL) | https://en.wikipedia.org/wiki/Hypertext_Application_Language |
 
 
 ### Section 5: REST API Security
