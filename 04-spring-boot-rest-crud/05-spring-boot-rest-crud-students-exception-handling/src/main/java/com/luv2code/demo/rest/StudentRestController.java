@@ -3,7 +3,6 @@ package com.luv2code.demo.rest;
 import com.luv2code.demo.entity.Student;
 import jakarta.annotation.PostConstruct;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
