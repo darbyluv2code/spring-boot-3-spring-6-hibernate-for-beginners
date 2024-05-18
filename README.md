@@ -8,6 +8,7 @@ Happy coding!
 
 [<img src="images/spring-boot-3-spring-6-and-hibernate-thumbnail-small.png">](http://www.luv2code.com/spring-github)
 
+&#8287;
 ## Spring Boot Road Map - Learning Path
 
 Here is a Spring Boot Learning Path and Roadmap to help you learn more about Spring Boot. These are links to luv2code courses on Udemy. You can purchase the courses to further your studies.
@@ -28,12 +29,13 @@ For full stack projects, you have the choice of either Angular or React. Pick th
 1. [Full Stack: Angular and Spring Boot](https://www.udemy.com/course/full-stack-angular-spring-boot-tutorial/?referralCode=2264F90C65A86316BB6B)
 1. [Full Stack: React and Spring Boot](https://www.udemy.com/course/full-stack-react-and-java-spring-boot-the-developer-guide/?referralCode=4325FA579FD3D313E28D)
 
+&#8287;
 ## More luv2code Courses
 For more courses, visit the [luv2code website](https://www.luv2code.com). 
 
 I'm looking forward to seeing you in other luv2code courses! 
 
-
+&#8287;
 ## Follow luv2code on Social Media
 * [YouTube Channel - luv2code](https://www.youtube.com/user/luv2codetv?sub_confirmation=1)
 * [Facebook Page - luv2code](https://www.facebook.com/luv2codetv)
