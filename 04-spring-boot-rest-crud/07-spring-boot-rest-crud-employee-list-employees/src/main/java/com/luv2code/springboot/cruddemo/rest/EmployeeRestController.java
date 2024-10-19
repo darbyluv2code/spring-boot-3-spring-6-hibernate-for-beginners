@@ -15,6 +15,7 @@ public class EmployeeRestController {
     private EmployeeDAO employeeDAO;
 
     // quick and dirty: inject employee dao (use constructor injection)
+    @Autowired
     public EmployeeRestController(EmployeeDAO theEmployeeDAO) {
         employeeDAO = theEmployeeDAO;
     }
