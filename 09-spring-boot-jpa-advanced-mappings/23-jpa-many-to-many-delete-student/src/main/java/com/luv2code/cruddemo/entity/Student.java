@@ -25,12 +25,8 @@ public class Student {
 
     @ManyToMany(fetch = FetchType.LAZY,
             cascade = {CascadeType.PERSIST, CascadeType.MERGE,
-                    CascadeType.DETACH, CascadeType.REFRESH})
-    @JoinTable(
-            name = "course_student",
-            joinColumns = @JoinColumn(name = "student_id"),
-            inverseJoinColumns = @JoinColumn(name = "course_id")
-    )
+                    CascadeType.DETACH, CascadeType.REFRESH},
+            mappedBy = "students")
     private List<Course> courses;
 
     public Student() {
@@ -92,6 +88,7 @@ public class Student {
         }
 
         courses.add(theCourse);
+        theCourse.addStudent(this);
     }
 
     @Override
