@@ -57,6 +57,8 @@ Here is a list of links that I mentioned in the course. I also added extra links
 | RFC 6902 - JSON Patch | https://www.rfc-editor.org/rfc/rfc6902.html |
 | RFC 7386 - JSON Merge Patch | https://www.rfc-editor.org/rfc/rfc7386.html |
 | json-patch project | https://github.com/java-json-tools/json-patch |
+| Spring Doc project | https://www.springdoc.org |
+
 
 
 ### Section 5: REST API Security
