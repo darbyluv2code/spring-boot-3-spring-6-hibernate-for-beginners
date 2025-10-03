@@ -11,9 +11,11 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private int id;
+    //Sample commit in sample branch
 
     @Column(name="first_name")
     private String firstName;
+    //Sample 2
 
     @Column(name="last_name")
     private String lastName;
