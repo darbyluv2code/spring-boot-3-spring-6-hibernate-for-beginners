@@ -51,14 +51,23 @@ I'm looking forward to seeing you in other luv2code courses!
 
 &#8287;
 ## License
-This source code is provided for your personal learning and educational use as part of a course by [luv2code LLC](https://www.luv2code.com).
+This source code and all related course materials are provided for your personal learning and educational use as part of a course by [luv2code LLC](https://www.luv2code.com).
 
-You may use and modify the source code in your own personal projects and your work or professional projects, including commercial applications.
+You may:
+- Use and modify the source code for your own personal projects  
+- Use and modify the source code in your work or professional projects, including commercial applications  
+- Integrate or extend the source code to build your own applications  
 
-You may not republish, redistribute, or share any course materials, including but not limited to videos, slides, images, text or PDFs.
+No action or special requests are required to use the source code in this way.
 
-You may not use these materials to create tutorials, videos, articles, online courses, training content, or any other educational products.
+---
 
-See the [LICENSE](./LICENSE) file for full terms and restrictions.
+You may not:
+- Republish, redistribute, or upload any course materials, including but not limited to videos, slides, images, text, or PDFs  
+- Use any course materials to create derivative educational content such as tutorials, blog posts, YouTube videos, online courses, training content, or social media content  
+- Use any course materials in teaching, training, or commercial educational products  
+- Claim any course materials as your own work  
 
-For permission requests, contact copyright@luv2code.com
+See the [LICENSE](./LICENSE) file for full terms and restrictions. 
+ 
+For permission requests, contact **copyright@luv2code.com**
