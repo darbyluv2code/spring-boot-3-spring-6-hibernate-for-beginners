@@ -47,3 +47,17 @@ I'm looking forward to seeing you in other luv2code courses!
 * [Facebook Page - luv2code](https://www.facebook.com/luv2codetv)
 * [X (Twitter) - luv2code](https://twitter.com/luv2codetv)
 * [LinkedIn](https://www.linkedin.com/in/chaddarby/)
+
+&#8287;
+## License
+This source code is provided for your personal learning and educational use as part of a course by [luv2code LLC](https://www.luv2code.com).
+
+You may use and modify the source code in your own personal projects and your work or professional projects, including commercial applications.
+
+You may not republish, redistribute, or share any course materials, including but not limited to videos, slides, images, text or PDFs.
+
+You may not use these materials to create tutorials, videos, articles, online courses, training content, or any other educational products.
+
+See the [LICENSE](./LICENSE) file for full terms and restrictions.
+
+For permission requests, contact copyright@luv2code.com
