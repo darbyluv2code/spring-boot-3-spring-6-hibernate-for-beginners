@@ -19,13 +19,13 @@ I'd recommend the following road map:
 1. [Java Programming Introduction for Beginners](https://www.udemy.com/course/java-intro-for-beginners/?referralCode=325F0EA33466DA1D8710)
 1. [Spring Boot 3, Spring 6 and Hibernate for Beginners](http://www.luv2code.com/spring-github)
 1. [Spring Boot Unit Testing](https://www.udemy.com/course/spring-boot-unit-testing/?referralCode=4184DE360D78A70932EE)
-1. [Deploy Spring Boot 3 Apps on AWS (Amazon Cloud)](https://www.udemy.com/course/deploy-spring-boot-3-apps-to-aws/?referralCode=DCE8981B59C70BA6BDBF)
+1. [Deploy Spring Boot Applications on AWS](https://www.udemy.com/course/deploy-spring-boot-3-apps-to-aws/?referralCode=DCE8981B59C70BA6BDBF)
 1. [Hibernate: Advanced Development Techniques](https://www.udemy.com/course/hibernate-tutorial-advanced/?referralCode=6FB9E2BA9AF54A4C9E69)
 1. [Master Java Design Patterns](https://www.luv2code.com/master-java-design-patterns-github)
 
 ### Project Course: Spring Boot, Spring MVC and Thymeleaf
 For end-to-end project with Spring Boot, Spring MVC and Thymeleaf:
-1. [Spring Boot 3 Project - Build a Job Portal Web Application](https://www.udemy.com/course/spring-boot-project-job-portal-web-app/?referralCode=BB9301596150194B61E2)
+1. [Spring Boot Project - Build a Job Portal Web Application](https://www.udemy.com/course/spring-boot-project-job-portal-web-app/?referralCode=BB9301596150194B61E2)
 
 ### REST API Project Course: Spring Boot REST APIs
 This is an intermediate level course that includes four REST API projects:
