@@ -29,7 +29,7 @@ For end-to-end project with Spring Boot, Spring MVC and Thymeleaf:
 
 ### REST API Project Course: Spring Boot 4 REST APIs: Building Modern REST APIs
 This is an intermediate level course that includes four REST API projects:
-1. [Spring Boot 4 REST APIs: Building Modern REST APIs - Building Modern APIs with Spring Boot](https://www.udemy.com/course/spring-boot-rest-apis/)
+1. [Spring Boot 4 REST APIs: Building Modern REST APIs](https://www.udemy.com/course/spring-boot-rest-apis/)
 
 ### Project Courses: Full Stack
 For full stack projects, you have the choice of either Angular or React. Pick the one that you like the best.
