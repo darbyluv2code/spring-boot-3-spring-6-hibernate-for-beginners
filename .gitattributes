@@ -1,0 +1,80 @@
+# -------------------------------------------------
+# Global normalization
+# -------------------------------------------------
+* text=auto
+
+# -------------------------------------------------
+# Core source and configuration files (LF)
+# -------------------------------------------------
+*.java        text eol=lf
+*.properties  text eol=lf
+*.xml         text eol=lf
+*.yml         text eol=lf
+*.yaml        text eol=lf
+*.md          text eol=lf
+*.txt         text eol=lf
+
+# Optional: web assets (LF everywhere)
+*.html        text eol=lf
+*.css         text eol=lf
+*.js          text eol=lf
+*.json        text eol=lf
+
+# -------------------------------------------------
+# Build tool / Gradle & Kotlin DSL files (LF) (safe even if not used)
+# -------------------------------------------------
+*.gradle      text eol=lf
+*.gradle.kts  text eol=lf
+*.kts         text eol=lf
+
+# -------------------------------------------------
+# Script wrappers (important for Spring Boot tooling)
+# -------------------------------------------------
+mvnw          text eol=lf
+gradlew       text eol=lf
+*.sh          text eol=lf
+
+# -------------------------------------------------
+# Windows scripts
+# -------------------------------------------------
+*.bat         text eol=crlf
+*.cmd         text eol=crlf
+*.ps1         text eol=lf   # PowerShell Core friendly
+
+# Wrapper batch files (explicit for clarity)
+gradlew.bat   text eol=crlf
+
+# -------------------------------------------------
+# GitHub language statistics
+# Emphasize Java by ignoring frontend static assets
+# -------------------------------------------------
+/src/main/resources/static/** linguist-ignore
+
+# -------------------------------------------------
+# Reduce noisy diffs
+# -------------------------------------------------
+*.min.js      -diff
+*.min.css     -diff
+package-lock.json -diff
+yarn.lock         -diff
+pnpm-lock.yaml    -diff
+
+# -------------------------------------------------
+# Binary assets (no diffs)
+# -------------------------------------------------
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.pdf   binary
+*.pptx  binary
+*.docx  binary
+*.xlsx  binary
+*.jar   binary
+*.zip   binary
+
+# -------------------------------------------------
+# Keep SVGs diffable (and normalize line endings)
+# -------------------------------------------------
+*.svg   text eol=lf
