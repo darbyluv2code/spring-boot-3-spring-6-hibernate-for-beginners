@@ -1,0 +1,276 @@
+name: Build
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-01-spring-boot-overview:
+    name: "Module 01: Spring Boot Overview (6 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 01: Spring Boot Overview"
+        find 01-spring-boot-overview -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 01 completed successfully"
+
+  build-02-spring-boot-spring-core:
+    name: "Module 02: Spring Boot Spring Core (9 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 02: Spring Boot Spring Core"
+        find 02-spring-boot-spring-core -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 02 completed successfully"
+
+  build-03-spring-boot-hibernate-jpa-crud:
+    name: "Module 03: Spring Boot Hibernate JPA CRUD (8 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 03: Spring Boot Hibernate JPA CRUD"
+        find 03-spring-boot-hibernate-jpa-crud -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 03 completed successfully"
+
+  build-04-spring-boot-rest-crud:
+    name: "Module 04: Spring Boot REST CRUD (22 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 04: Spring Boot REST CRUD"
+        find 04-spring-boot-rest-crud -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 04 completed successfully"
+
+  build-05-spring-boot-rest-security:
+    name: "Module 05: Spring Boot REST Security (8 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 05: Spring Boot REST Security"
+        find 05-spring-boot-rest-security -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 05 completed successfully"
+
+  build-06-spring-boot-spring-mvc:
+    name: "Module 06: Spring Boot Spring MVC (20 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 06: Spring Boot Spring MVC"
+        find 06-spring-boot-spring-mvc -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 06 completed successfully"
+
+  build-07-spring-boot-spring-mvc-crud:
+    name: "Module 07: Spring Boot Spring MVC CRUD (7 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 07: Spring Boot Spring MVC CRUD"
+        find 07-spring-boot-spring-mvc-crud -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 07 completed successfully"
+
+  build-08-spring-boot-spring-mvc-security:
+    name: "Module 08: Spring Boot Spring MVC Security (13 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 08: Spring Boot Spring MVC Security"
+        find 08-spring-boot-spring-mvc-security -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 08 completed successfully"
+
+  build-09-spring-boot-jpa-advanced-mappings:
+    name: "Module 09: Spring Boot JPA Advanced Mappings (23 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 09: Spring Boot JPA Advanced Mappings"
+        find 09-spring-boot-jpa-advanced-mappings -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 09 completed successfully"
+
+  build-10-spring-boot-aop:
+    name: "Module 10: Spring Boot AOP (24 projects)"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build all projects in module
+      run: |
+        set -e
+        echo "Building Module 10: Spring Boot AOP"
+        find 10-spring-boot-aop -name pom.xml -not -path "*/target/*" | sort | while read pom; do
+          echo "Building $(dirname $pom)"
+          mvn clean compile -B -q -f "$pom" || {
+            echo "Failed to compile $pom"
+            exit 1
+          }
+        done
+        echo "Module 10 completed successfully"

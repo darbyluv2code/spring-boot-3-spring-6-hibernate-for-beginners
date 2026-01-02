@@ -1,6 +1,8 @@
-# Spring Boot 4, Spring 7 and Hibernate for Beginners
+# Spring Boot 3, Spring 6 and Hibernate for Beginners
 
-Source code for the course: [Spring Boot 4, Spring 7 and Hibernate for Beginners](http://www.luv2code.com/spring-github)
+![Build Status](https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners/actions/workflows/build.yml/badge.svg)
+
+Source code for the course: [Spring Boot 3, Spring 6 and Hibernate for Beginners](http://www.luv2code.com/spring-github)
 
 If you have questions or need tech support, post your questions to the [classroom discussion forum](https://www.udemy.com/spring-hibernate-tutorial/learn/v4/questions).
 
