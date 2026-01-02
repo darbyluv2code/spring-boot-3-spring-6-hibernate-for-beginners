@@ -39,7 +39,8 @@ gradlew       text eol=lf
 # -------------------------------------------------
 *.bat         text eol=crlf
 *.cmd         text eol=crlf
-*.ps1         text eol=lf   # PowerShell Core friendly
+# PowerShell Core friendly
+*.ps1         text eol=lf
 
 # Wrapper batch files (explicit for clarity)
 gradlew.bat   text eol=crlf
