@@ -25,7 +25,7 @@ I'd recommend the following road map:
 
 ### Project Course: Spring Boot, Spring MVC and Thymeleaf
 For end-to-end project with Spring Boot, Spring MVC and Thymeleaf:
-1. [Spring Boot 4 Project - Build a Job Portal Web Application](https://www.udemy.com/course/spring-boot-project-job-portal-web-app/?referralCode=BB9301596150194B61E2)
+1. [Spring Boot 4 Project: Build a Job Portal Web Application](https://www.udemy.com/course/spring-boot-project-job-portal-web-app/?referralCode=BB9301596150194B61E2)
 
 ### REST API Project Course: Spring Boot 4 REST APIs: Building Modern REST APIs
 This is an intermediate level course that includes four REST API projects:
