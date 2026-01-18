@@ -41,10 +41,24 @@ public class StudentDAOImpl implements StudentDAO {
 
     @Override
     public List<Student> findByLastName(String lastName) {
-        String jpql = "SELECT s FROM Student s WHERE s.lastName='" + lastName + "'";
-        return entityManager.createQuery(jpql, Student.class)
+        String jpql = "SELECT s FROM Student s WHERE s.lastName=:theData";
+        return entityManager.createQuery(jpql, Student.class).setParameter("theData", lastName)
                 .getResultList();
     }
+
+    @Override
+    @Transactional
+    public Void update(Student theStudent) {
+        entityManager.merge(theStudent);
+        return null;
+    }
+
+    @Override
+    @Transactional
+    public void delete(Integer id) {
+        Student st= entityManager.find(Student.class, id);
+         entityManager.remove(st);
+    }   
 }
 
 
