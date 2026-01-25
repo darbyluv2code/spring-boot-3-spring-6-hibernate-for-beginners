@@ -5,5 +5,6 @@ import com.luv2code.cruddemo.entity.Student;
 public interface StudentDAO {
 
     void save(Student theStudent);
+    Student findById(int id);
 
 }
