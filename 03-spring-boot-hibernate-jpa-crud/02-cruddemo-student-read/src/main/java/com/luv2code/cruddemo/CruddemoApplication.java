@@ -22,8 +22,11 @@ public class CruddemoApplication {
 
 			// createMultipleStudents(studentDAO);
 
-			readStudent(studentDAO);
-
+			// // readStudent(studentDAO);
+            // testFindAll(studentDAO);
+			// testFindByLastName(studentDAO);
+			testUpdateStudent(studentDAO);
+			testDeleteStudent(studentDAO);
 		};
 	}
 
@@ -77,8 +80,41 @@ public class CruddemoApplication {
 		// display id of the saved student
 		System.out.println("Saved student. Generated id: " + tempStudent.getId());
 	}
-}
 
+	public void testFindAll(StudentDAO studentDAO) {
+	    System.out.println("Finding all students ...");
+	    var students = studentDAO.findAll();
+	    for (Student student : students) {
+	        System.out.println(student);
+	    }
+	}
+
+	public void testFindByLastName(StudentDAO studentDAO) {
+	    System.out.println("Finding students with last name 'Doe' ...");
+	    var students = studentDAO.findByLastName("Doe");
+	    for (Student student : students) {
+	        System.out.println(student);
+	    }
+	}
+
+	public void testUpdateStudent(StudentDAO studentDAO) {
+	    System.out.println("Updating student with id 1 ...");
+	    Student student = studentDAO.findById(3);
+	    if (student != null) {
+	        student.setFirstName("UpdatedName");
+	        studentDAO.update(student);
+	        System.out.println("Updated student: " + student);
+	    } else {
+	        System.out.println("Student with id 1 not found.");
+	    }
+	}
+
+	public void testDeleteStudent(StudentDAO studentDAO) {
+	    System.out.println("Deleting student with id 2 ...");
+	    studentDAO.delete(2);
+	    System.out.println("Deleted student with id 2.");
+}
+}
 
 
 

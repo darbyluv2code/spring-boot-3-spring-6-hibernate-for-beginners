@@ -2,6 +2,9 @@ package com.luv2code.cruddemo.dao;
 
 import com.luv2code.cruddemo.entity.Student;
 import jakarta.persistence.EntityManager;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,6 +33,32 @@ public class StudentDAOImpl implements StudentDAO {
         return entityManager.find(Student.class, id);
     }
 
+    @Override
+    public List<Student> findAll() {
+        String jpql = "SELECT s FROM Student s ORDER BY s.lastName";
+        return entityManager.createQuery(jpql, Student.class).getResultList();
+    }
+
+    @Override
+    public List<Student> findByLastName(String lastName) {
+        String jpql = "SELECT s FROM Student s WHERE s.lastName=:theData";
+        return entityManager.createQuery(jpql, Student.class).setParameter("theData", lastName)
+                .getResultList();
+    }
+
+    @Override
+    @Transactional
+    public Void update(Student theStudent) {
+        entityManager.merge(theStudent);
+        return null;
+    }
+
+    @Override
+    @Transactional
+    public void delete(Integer id) {
+        Student st= entityManager.find(Student.class, id);
+         entityManager.remove(st);
+    }   
 }
 
 

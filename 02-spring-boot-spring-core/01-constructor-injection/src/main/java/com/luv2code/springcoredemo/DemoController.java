@@ -22,7 +22,8 @@ public class DemoController {
     }
 }
 
-
+//ismein basiclaly /dailyworkout mapping deomocontroller ke pass request bhejra jo interface implementation se exact class ke function 
+//ko implement kr rha
 
 
 

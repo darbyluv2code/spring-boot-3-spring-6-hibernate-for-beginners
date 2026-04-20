@@ -18,11 +18,12 @@ public class StudentRestController {
     public List<Student> getStudents() {
 
         List<Student> theStudents = new ArrayList<>();
-
+        Student S1 = new Student();
+        S1.setFirstName("harami");
         theStudents.add(new Student("Poornima", "Patel"));
         theStudents.add(new Student("Mario", "Rossi"));
         theStudents.add(new Student("Mary", "Smith"));
-
+        theStudents.add(S1);
         return theStudents;
     }
 }
