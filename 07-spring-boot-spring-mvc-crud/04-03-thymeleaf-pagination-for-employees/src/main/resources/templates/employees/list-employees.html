@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Employee Directory</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h3>Employee Directory</h3>
+    <hr>
+
+    <!-- Add a button -->
+    <a th:href="@{/employees/showFormForAdd}"
+       class="btn btn-primary btn-sm mb-3">
+        Add Employee
+    </a>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="tempEmployee : ${employeePage.content}">
+            <td th:text="${tempEmployee.firstName}"></td>
+            <td th:text="${tempEmployee.lastName}"></td>
+            <td th:text="${tempEmployee.email}"></td>
+            <td>
+                <a th:href="@{/employees/showFormForUpdate(employeeId=${tempEmployee.id})}" class="btn btn-info btn-sm">Update</a>
+                <a th:href="@{/employees/delete(employeeId=${tempEmployee.id})}" class="btn btn-danger btn-sm"
+                   onclick="if (!confirm('Are you sure you want to delete this employee?')) return false">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <form th:action="@{/employees/list}" method="get" class="mb-3">
+        <label for="pageSize">Page Size:</label>
+        <select id="pageSize" name="size" onchange="this.form.submit()">
+            <option th:value="5" th:text="'5'"
+                    th:selected="${employeePage.size == 5}">5</option>
+            <option th:value="10" th:text="'10'"
+                    th:selected="${employeePage.size == 10}">10</option>
+            <option th:value="20" th:text="'20'"
+                    th:selected="${employeePage.size == 20}">20</option>
+        </select>
+        <!-- Keep the current page when the user changes page size -->
+        <input type="hidden" name="page" th:value="${employeePage.number + 1}" />
+        <noscript>
+            <button type="submit">Apply</button>
+        </noscript>
+    </form>
+
+    <!-- Pagination controls -->
+    <nav>
+        <ul class="pagination">
+            <!-- Previous button -->
+            <li class="page-item" th:classappend="${employeePage.first} ? 'disabled'">
+                <a class="page-link"
+                   th:href="@{/employees/list(page=${employeePage.number == 0 ? 1 : employeePage.number}, size=${employeePage.size})}"
+                   aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <!-- Page numbers -->
+            <li class="page-item" th:each="i : ${#numbers.sequence(1, employeePage.totalPages)}"
+                th:classappend="${employeePage.number + 1 == i} ? 'active'">
+                <a class="page-link" th:href="@{/employees/list(page=${i}, size=${employeePage.size})}" th:text="${i}">1</a>
+            </li>
+            <!-- Next button -->
+            <li class="page-item" th:classappend="${employeePage.last} ? 'disabled'">
+                <a class="page-link" th:href="@{/employees/list(page=${employeePage.number + 2}, size=${employeePage.size})}" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+
+
+        </ul>
+    </nav>
+
+
+</div>
+
+</body>
+</html>
+
+
+
